@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Entity;
 
+use ApiPlatform\Metadata\ApiResource;
 use App\Repository\BookRepository;
 use DateTimeImmutable;
 use Doctrine\DBAL\Types\Types;
@@ -47,6 +48,7 @@ use Hateoas\Configuration\Annotation as Hateoas;
  * )
  */
 #[ORM\Entity(repositoryClass: BookRepository::class)]
+#[ApiResource]
 class Book
 {
     #[ORM\Id]
