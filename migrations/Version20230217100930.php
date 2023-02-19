@@ -14,7 +14,7 @@ final class Version20230217100930 extends AbstractMigration
 {
     public function getDescription(): string
     {
-        return 'Create table author and add foreign key to book';
+        return 'creation de la base de donnees author';
     }
 
     public function up(Schema $schema): void
