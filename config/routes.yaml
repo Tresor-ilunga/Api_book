@@ -11,3 +11,9 @@ kernel:
     schemes:
         - HTTP
         - HTTPS
+
+api_login_check:
+    path: /api/login_check
+    schemes:
+        - HTTP
+        - HTTPS
