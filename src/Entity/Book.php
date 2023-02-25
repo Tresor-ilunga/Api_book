@@ -12,41 +12,12 @@ use Doctrine\ORM\Mapping as ORM;
 use JMS\Serializer\Annotation\Groups;
 use JMS\Serializer\Annotation\Since;
 use Symfony\Component\Validator\Constraints as Assert;
-use Hateoas\Configuration\Annotation as Hateoas;
 
 /**
  * Class Book
  * @author Tresor-ilunga <19im065@esisalama.org>
  */
 
-/**
- * @Hateoas\Relation(
- *      "self",
- *      href = @Hateoas\Route(
- *          "detailBook",
- *          parameters = { "id" = "expr(object.getId())" }
- *      ),
- *      exclusion = @Hateoas\Exclusion(groups="getBooks")
- * )
- *
- * @Hateoas\Relation(
- *      "delete",
- *      href = @Hateoas\Route(
- *          "deleteBook",
- *          parameters = { "id" = "expr(object.getId())" },
- *      ),
- *      exclusion = @Hateoas\Exclusion(groups="getBooks", excludeIf = "expr(not is_granted('ROLE_ADMIN'))"),
- * )
- *
- * * @Hateoas\Relation(
- *      "update",
- *      href = @Hateoas\Route(
- *          "updateBook",
- *          parameters = { "id" = "expr(object.getId())" },
- *      ),
- *      exclusion = @Hateoas\Exclusion(groups="getBooks", excludeIf = "expr(not is_granted('ROLE_ADMIN'))"),
- * )
- */
 #[ORM\Entity(repositoryClass: BookRepository::class)]
 #[ApiResource]
 class Book

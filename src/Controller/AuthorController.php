@@ -92,7 +92,7 @@ class AuthorController extends AbstractController
      * @throws InvalidArgumentException
      */
     #[Route('/api/authors/{id}', name: 'deleteAuthor', methods: ['DELETE'])]
-    #[IsGranted('ROLE_ADMIN', message: 'Vous n\'avez pas les droits suffisants pour supprimer un auteur')]
+    //#[IsGranted('ROLE_ADMIN', message: 'Vous n\'avez pas les droits suffisants pour supprimer un auteur')]
     public function deleteAuthor(Author $author, EntityManagerInterface $em, TagAwareCacheInterface $cache): JsonResponse
     {
 
@@ -124,7 +124,7 @@ class AuthorController extends AbstractController
      * @throws InvalidArgumentException
      */
     #[Route('/api/authors', name: 'createAuthor', methods: ['POST'])]
-    #[IsGranted('ROLE_ADMIN', message: 'Vous n\'avez pas les droits suffisants pour créer un auteur')]
+    //#[IsGranted('ROLE_ADMIN', message: 'Vous n\'avez pas les droits suffisants pour créer un auteur')]
     public function createAuthor(Request $request, SerializerInterface $serializer,
                                  EntityManagerInterface $em, UrlGeneratorInterface $urlGenerator, ValidatorInterface $validator,
                                  TagAwareCacheInterface $cache): JsonResponse
@@ -169,7 +169,7 @@ class AuthorController extends AbstractController
      * @throws InvalidArgumentException
      */
     #[Route('/api/authors/{id}', name:"updateAuthors", methods:['PUT'])]
-    #[IsGranted('ROLE_ADMIN', message: 'Vous n\'avez pas les droits suffisants pour éditer un auteur')]
+    //#[IsGranted('ROLE_ADMIN', message: 'Vous n\'avez pas les droits suffisants pour éditer un auteur')]
     public function updateAuthor(Request $request, SerializerInterface $serializer,
                                  Author $currentAuthor, EntityManagerInterface $em, ValidatorInterface $validator,
                                  TagAwareCacheInterface $cache): JsonResponse
