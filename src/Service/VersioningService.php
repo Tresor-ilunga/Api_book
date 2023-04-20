@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\RequestStack;
 
 /**
  * Class VersioningService
- * @author Tresor-ilunga <19im065@esisalama.org>
+ * @author Tresor-ilunga <ilungat82@gmail.com>
  */
 #[AllowDynamicProperties] class VersioningService
 {
@@ -29,6 +29,11 @@ use Symfony\Component\HttpFoundation\RequestStack;
         $this->defaultVersion = $params->get('default_api_version');
     }
 
+    /**
+     * This method returns the version of the API to use.
+     *
+     * @return string
+     */
     public function getVersion(): string
     {
         $version = $this->defaultVersion;

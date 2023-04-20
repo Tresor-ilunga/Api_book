@@ -12,10 +12,17 @@ use Symfony\Component\HttpKernel\KernelEvents;
 
 /**
  * Class ExceptionSubscriber
- * @author Tresor-ilunga <19im065@esisalama.org>
+ * @author Tresor-ilunga <ilungat82@gmail.com>
  */
 class ExceptionSubscriber implements EventSubscriberInterface
 {
+
+    /**
+     * This method is called when the KernelEvents::EXCEPTION event is dispatched.
+     *
+     * @param ExceptionEvent $event
+     * @return void
+     */
     public function onKernelException(ExceptionEvent $event): void
     {
         $exception = $event->getThrowable();
@@ -38,6 +45,11 @@ class ExceptionSubscriber implements EventSubscriberInterface
             }
     }
 
+    /**
+     * This method returns the events to which the current class is subscribed.
+     *
+     * @return string[]
+     */
     public static function getSubscribedEvents(): array
     {
         return [

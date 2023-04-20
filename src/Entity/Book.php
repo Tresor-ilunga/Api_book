@@ -17,7 +17,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Class Book
- * @author Tresor-ilunga <19im065@esisalama.org>
+ * @author Tresor-ilunga <ilungat82@gmail.com>
  */
 
 #[ORM\Entity(repositoryClass: BookRepository::class)]
