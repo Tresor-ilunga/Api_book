@@ -26,7 +26,8 @@ use Symfony\Contracts\Cache\TagAwareCacheInterface;
 
 /**
  * Class BookController
- * @package App\Controller
+ *
+ *
  * @author Tresor-ilunga <ilungat82@gmail.com>
  */
 

@@ -12,6 +12,8 @@ use Symfony\Component\HttpKernel\KernelEvents;
 
 /**
  * Class ExceptionSubscriber
+ *
+ *
  * @author Tresor-ilunga <ilungat82@gmail.com>
  */
 class ExceptionSubscriber implements EventSubscriberInterface

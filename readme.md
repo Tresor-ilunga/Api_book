@@ -1,23 +1,24 @@
 # ApiBook
 
-Création d'une API REST pour la gestion de livres.
+Creation of a REST API for book management.
 
-## Environnement de développement
+## Development environment
 
-### Pré-requis
+### Prerequisites
 
 * PHP 8.2
 * Composer
 * Symfony CLI
+* Docker & Docker-compose
 
-Vous pouvez vérifier les pré-requis (sauf Docker et Docker-compose) avec la commande suivante (de la CLI Symfony) ; 
+You can check the prerequisites (except Docker and Docker-compose) with the following command (from the Symfony CLI):
 
 ```bash
 symfony check:requirements
 ```
 
-### Lancer l'environnement de développement
+### Starting the development environment
 
 ```bash
-symfony serve -d
+docker-compose up -d
 ```

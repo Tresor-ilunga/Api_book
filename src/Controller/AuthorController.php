@@ -23,7 +23,8 @@ use Symfony\Contracts\Cache\TagAwareCacheInterface;
 
 /**
  * Class AuthorController
- * @package App\Controller
+ *
+ *
  * @author Tresor-ilunga <ilungat82@gmail.com>
  */
 class AuthorController extends AbstractController

@@ -9,6 +9,8 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * Class User
+ *
+ *
  * @author Tresor-ilunga <ilungat82@gmail.com>
  */
 #[ORM\Entity(repositoryClass: UserRepository::class)]
