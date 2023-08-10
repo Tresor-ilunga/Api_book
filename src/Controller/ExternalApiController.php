@@ -16,7 +16,6 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
 /**
  * Class ExternalApiController
  *
- *
  * @author Tresor-ilunga <ilungat82@gmail.com>
  */
 class ExternalApiController extends AbstractController

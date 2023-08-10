@@ -1,6 +1,6 @@
 # ApiBook
 
-Creation of a REST API for book management.
+Creation of a REST API for a book management application.
 
 ## Development environment
 
